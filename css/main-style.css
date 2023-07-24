@@ -779,6 +779,11 @@ header .nav__container--heading__para {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+
+.personality-skills video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
 .personality-skills--heading-container {
   margin-top: 2%;
   margin-bottom: 4%;
