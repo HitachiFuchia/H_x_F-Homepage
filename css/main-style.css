@@ -686,7 +686,7 @@ header .nav__container--heading__para {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0.2;
+  opacity: 1;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
