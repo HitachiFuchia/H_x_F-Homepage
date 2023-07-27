@@ -154,21 +154,6 @@
   text-align: center;
   font-family: "Orbitron";
   text-shadow: 1px 1px 15px #00ff7f;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-
-.sec-title:hover,
-.sec-title:active {
-  text-shadow: 20px 20px -50px #00ff7f;
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
 }
 
 header {
