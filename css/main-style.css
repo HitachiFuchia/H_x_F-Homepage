@@ -970,7 +970,7 @@ header .nav__container--heading__para {
 .qualifikationen__main-container--card {
   background-color: #1c1c1c;
   position: relative;
-  width: 500px;
+  width: auto;
   height: 460px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1010,7 +1010,7 @@ header .nav__container--heading__para {
 }
 .qualifikationen__main-container--card__imgbox img {
   height: 500px;
-  width: 420px;
+  width: auto;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
