@@ -961,7 +961,7 @@ header .nav__container--heading__para {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
   padding-left: 5rem;
