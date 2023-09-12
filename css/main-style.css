@@ -182,7 +182,7 @@ header .header__overlay {
 }
 header .header__overlay img {
   height: 70px;
-  width: 70px;
+  width: auto;
 }
 header .header__overlay.open {
   z-index: 2;
@@ -274,7 +274,7 @@ header .nav__container {
 }
 header .nav__container--logo img {
   height: 70px;
-  width: 70px;
+  width: auto;
 }
 header .nav__container--links__container {
   display: flex;
@@ -2064,7 +2064,7 @@ header .nav__container--heading__para {
   }
   header .header__overlay ul img {
     height: 50px;
-    width: 50px;
+    width: auto;
   }
   header .header__overlay ul li a {
     font-size: 25px;
@@ -2319,7 +2319,7 @@ header .nav__container--heading__para {
   }
   header .header__overlay ul img {
     height: 40px;
-    width: 40px;
+    width: auto;
   }
   header .header__overlay ul li a {
     font-size: 20px;
