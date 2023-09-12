@@ -1839,7 +1839,7 @@ header .nav__container--heading__para {
   }
   header .nav__container--logo img {
     height: 60px;
-    width: 60px;
+    width: auto;
   }
   header .nav__container--heading__para {
     top: 20%;
@@ -2133,7 +2133,7 @@ header .nav__container--heading__para {
 @media screen and (max-width: 500px) {
   header .nav__container--logo img {
     height: 50px;
-    width: 50px;
+    width: auto;
   }
   header .nav__container--heading__title {
     position: relative;
@@ -2315,7 +2315,7 @@ header .nav__container--heading__para {
 @media screen and (max-width: 400px) {
   header .nav__container--logo img {
     height: 40px;
-    width: 40px;
+    width: auto;
   }
   header .header__overlay ul img {
     height: 40px;
