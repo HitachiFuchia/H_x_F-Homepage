@@ -2367,8 +2367,8 @@ header .nav__container--heading__para {
     gap: 2rem;
   }
   .personality-skills--box {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   .personality-skills--box__title {
     font-size: 1rem;
