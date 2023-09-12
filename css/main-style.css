@@ -1819,17 +1819,17 @@ header .nav__container--heading__para {
   }
   header .header__menu.open:before {
     transform: rotate(-405deg) translate(-3px, 2px);
-    -webkit-transform: rotate(-400deg) translate(-8px, 6px);
-    -moz-transform: rotate(-400deg) translate(-8px, 6px);
-    -ms-transform: rotate(-400deg) translate(-8px, 6px);
-    -o-transform: rotate(-400deg) translate(-8px, 6px);
+    -webkit-transform: rotate(-405deg) translate(-3px, 2px);
+    -moz-transform: rotate(-405deg) translate(-3px, 2px);
+    -ms-transform: rotate(-405deg) translate(-3px, 2px);
+    -o-transform: rotate(-405deg) translate(-3px, 2px);
   }
   header .header__menu.open:after {
     transform: rotate(405deg) translate(-9px, -8px);
-    -webkit-transform: rotate(400deg) translate(-9px, -8px);
-    -moz-transform: rotate(400deg) translate(-9px, -8px);
-    -ms-transform: rotate(400deg) translate(-9px, -8px);
-    -o-transform: rotate(400deg) translate(-9px, -8px);
+    -webkit-transform: rotate(405deg) translate(-9px, -8px);
+    -moz-transform: rotate(405deg) translate(-9px, -8px);
+    -ms-transform: rotate(405deg) translate(-9px, -8px);
+    -o-transform: rotate(405deg) translate(-9px, -8px);
   }
   header .header__menu.open .header__menu--line {
     opacity: 0;
