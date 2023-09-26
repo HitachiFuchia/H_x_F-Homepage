@@ -1377,6 +1377,7 @@ header .nav__container--heading__button:active {
 .web-skills--icons-container__card-8--face1__imgbox img,
 .web-skills--icons-container__card-9--face1__imgbox img {
   width: 100px;
+  height: auto;
 }
 
 .web-skills--icons-container__card-1--face1__imgbox h3,
