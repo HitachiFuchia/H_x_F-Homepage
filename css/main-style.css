@@ -3246,8 +3246,8 @@ header .nav__container--heading__button:active {
 
 
   header .nav__container--heading__button {
-    right: 5%;
-    bottom: 5%;
+    right: 38%;
+    bottom: 1%;
     font-size: 12px;
     padding: 5px;
     border-radius: 5px;
@@ -3487,8 +3487,8 @@ header .nav__container--heading__button:active {
   }
 
   header .nav__container--heading__button {
-    right: 2%;
-    bottom: 2%;
+    right: 31%;
+    bottom: 1%;
   }
 
   .web-skills--icons-container__card-1,
