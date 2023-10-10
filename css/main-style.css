@@ -1945,6 +1945,10 @@ header .nav__container--heading__button:active {
   -o-transition: all 0.5s;
 }
 
+  @supports (transition: initial) {
+   transition: all 0.5s;
+}
+
 .portfolio__main-container--card:hover img,
 .portfolio__main-container--card:active img {
   transform: scale(0);
