@@ -2257,6 +2257,7 @@ header .nav__container--heading__button:active {
 }
 
 .contact--main-container form input,
+.contact--main-container form input::placeholder,
 .contact--main-container form textarea {
   background-color: rgba(46, 139, 87, 0.5);
   border: none;
