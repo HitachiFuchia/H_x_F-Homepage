@@ -3700,6 +3700,23 @@ header .nav__container--heading__button:active {
     font-size: 1.6rem;
   }
 
+  .vorname__container i,
+  .nachname__container i,
+  .email__container i,
+  .telefon__container i {
+    font-size: 1.2rem;
+    top: 7px;
+  }
+
+  .vorname__container .effect,
+  .nachname__container .effect,
+  .email__container .effect,
+  .telefon__container .effect {
+    font-size: 0.8rem;
+    top: 6px;
+    padding: 3px;
+  }
+
   .contact form input,
   .contact form textarea {
     font-size: 1.2rem;
