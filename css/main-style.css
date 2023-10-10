@@ -2257,7 +2257,6 @@ header .nav__container--heading__button:active {
 }
 
 .contact--main-container form input,
-.contact--main-container form input::placeholder,
 .contact--main-container form textarea {
   background-color: rgba(46, 139, 87, 0.5);
   border: none;
@@ -2267,6 +2266,10 @@ header .nav__container--heading__button:active {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+  color: springgreen;
+}
+
+.contact--main-container form input::placeholder {
   color: springgreen;
 }
 
