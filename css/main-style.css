@@ -2202,6 +2202,60 @@ header .nav__container--heading__button:active {
   /* text-decoration: underline springgreen 2px; */
 }
 
+.vorname__container,
+.nachname__container,
+.email__container,
+.telefon__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.vorname__container i,
+.nachname__container i,
+.email__container i,
+.telefon__container i {
+  position: absolute;
+  font-size: 16px;
+  right: 10px;
+  top: 10px;
+  color: black;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transform: rotate(0deg) scale(1);
+  -webkit-transform: rotate(0deg) scale(1);
+  -moz-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  -o-transform: rotate(0deg) scale(1);
+}
+
+
+.vorname__container .effect,
+.nachname__container .effect,
+.email__container .effect,
+.telefon__container .effect {
+  right: 7px;
+  top: 7px;
+  color: tomato;
+  font-size: 12px;
+  transform: rotate(360deg) scale(1.5);
+  -webkit-transform: rotate(360deg) scale(1.5);
+  -moz-transform: rotate(360deg) scale(1.5);
+  -ms-transform: rotate(360deg) scale(1.5);
+  -o-transform: rotate(360deg) scale(1.5);
+  background-color: rgba(255, 99, 71, 0.207);
+
+  border-radius: 50%;
+  padding: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 .contact--main-container form input,
 .contact--main-container form textarea {
   background-color: rgba(46, 139, 87, 0.5);
