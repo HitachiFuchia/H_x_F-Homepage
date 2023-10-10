@@ -1911,11 +1911,6 @@ header .nav__container--heading__button:active {
   transition-delay: 0.5s;
 }
 
-  @supports (:active:before) {
-    transform: scale(1) rotate(0deg);
-  transition-delay: 0.5s;
-}
-
 .portfolio__main-container--card {
   width: 500px;
   height: 350px;
