@@ -1,17 +1,73 @@
 "use strict"
 
-function sendEmail() {
-  Email.sendEmail({
-    secureToken: "548c5122-1c99-4cfc-9200-956e59454d98",
-    To: 'henryfrank98@hotmail.com',
-    From: document.getElementById("email").value,
-    Subject: "New Contact Form Enquiry",
-    Body: "Vorname: " + document.getElementById("vorname").value
-      + "<br> Nachname: " + document.getElementById("nachname").value
-      + "<br> Email: " + document.getElementById("email").value
-      + "<br> Phone: " + document.getElementById("phone").value
-      + "<br> Message: " + document.getElementById("message").value
-  }).then(
-    message => alert("Kontaktformular erfolgreich versendet")
-  );
-}
+const inputVorname = document.querySelector("#vorname");
+const vornameIcon = document.querySelector("#vornameIcon");
+
+const inputNachname = document.querySelector("#nachname");
+const nachnameIcon = document.querySelector("#nachnameIcon");
+
+const inputEmail = document.querySelector("#email");
+const emailIcon = document.querySelector(".fa-envelope");
+
+const inputTelefon = document.querySelector("#phone");
+const phoneIcon = document.querySelector(".fa-mobile");
+
+inputVorname.addEventListener("keydown", () => {
+  let pattern = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+
+  if (!inputVorname.value.match(pattern)) {
+    vornameIcon.classList.add("effect")
+    vornameIcon.style.color = "tomato";
+  }
+
+  if (inputVorname.value.match(pattern)) {
+    vornameIcon.classList.remove("effect")
+    vornameIcon.style.color = "springgreen";
+  }
+})
+
+inputNachname.addEventListener("keydown", () => {
+  let pattern = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+
+  if (!inputNachname.value.match(pattern)) {
+    nachnameIcon.classList.add("effect")
+    nachnameIcon.style.color = "tomato";
+  }
+
+  if (inputNachname.value.match(pattern)) {
+    nachnameIcon.classList.remove("effect")
+    nachnameIcon.style.color = "springgreen";
+  }
+})
+
+
+inputEmail.addEventListener("keydown", () => {
+  let pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (!inputEmail.value.match(pattern)) {
+    emailIcon.classList.add("effect")
+    emailIcon.style.color = "tomato";
+  }
+
+  if (inputEmail.value.match(pattern)) {
+    emailIcon.classList.remove("effect")
+    emailIcon.style.color = "springgreen";
+  }
+})
+
+inputTelefon.addEventListener("keydown", () => {
+  let patternMobileEurope = /^\+?[0-9]{10,14}$/;
+  let patternMobileUSA = /^\+?[1][0-9]{9}$/;
+  let patternTelefonEurope = /^\+?[0-9]{3}-[0-9]{7,8}$/;
+  let patternTelefonUSA = /^\+?[1][0-9]{3}-[0-9]{7,8}$/;
+
+  if (!inputTelefon.value.match(patternMobileEurope || patternMobileUSA || patternTelefonEurope || patternTelefonUSA)) {
+    phoneIcon.classList.add("effect")
+    phoneIcon.style.color = "tomato";
+  }
+
+  if (inputTelefon.value.match(patternMobileEurope || patternMobileUSA || patternTelefonEurope || patternTelefonUSA)) {
+    phoneIcon.classList.remove("effect")
+    phoneIcon.style.color = "springgreen";
+  }
+})
