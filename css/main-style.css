@@ -2269,7 +2269,8 @@ header .nav__container--heading__button:active {
   color: springgreen;
 }
 
-.contact--main-container form input::placeholder {
+.contact--main-container form input::placeholder,
+.contact--main-container form textarea::placeholder {
   color: springgreen;
 }
 
