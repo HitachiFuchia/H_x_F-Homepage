@@ -770,7 +770,7 @@ header .nav__container--heading__button:active {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  z-index: 20;
+  z-index: 1;
 }
 
 .about__me--introduction__card--imgbox img {
