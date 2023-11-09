@@ -864,7 +864,6 @@ header .nav__container--heading__button:active {
   -ms-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
 }
-
 .skills-animate-show:nth-child(1) {
   transition-delay: 100ms;
 }
@@ -890,29 +889,29 @@ header .nav__container--heading__button:active {
 }
 
 .skills-animate-show:nth-child(7) {
-  transition-delay: 1.3s;
+  transition-delay: 900ms;
 }
 
 .skills-animate-show:nth-child(8) {
-  transition-delay: 1.5s;
+  transition-delay: 1.1s;
 }
 
 .skills-animate-show:nth-child(9) {
-  transition-delay: 1.7s;
+  transition-delay: 1.3s;
 }
 
 .skills-animate-show:nth-child(10) {
-  transition-delay: 1.9s;
+  transition-delay: 900ms;
 }
 
 .skills-animate-show:nth-child(11) {
-  transition-delay: 2.1s;
+  transition-delay: 1.1s;
 }
 
 .skills-animate-show:nth-child(12) {
-  transition-delay: 2.3s;
+  transition-delay: 1.3s;
+  margin-bottom: 0.1rem;
 }
-
 
 
 .web-skills--icons-container__card-1,
@@ -2483,7 +2482,7 @@ header .nav__container--heading__button:active {
 .contact--main-container__submit-container span {
   position: absolute;
   background: springgreen;
-  box-shadow: 0 0 10px springgreen, 0 0 20px springgreen, 0 0 30px springgreen, 0 0 50px springgreen, 0 0 100px springgreen;
+  box-shadow: 0 0 5px springgreen, 0 0 6px springgreen, 0 0 7px springgreen, 0 0 8px springgreen, 0 0 9px springgreen;
 }
 
 .contact--main-container__submit-container span:nth-child(1),
