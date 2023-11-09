@@ -2048,6 +2048,11 @@ header .nav__container--heading__button:active {
   flex-direction: column;
   justify-content: center;
   background-color: #1e1e1e;
+  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
 }
 
 .portfolio--heading-container {
