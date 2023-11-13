@@ -24,7 +24,7 @@ CTA.addEventListener("click", (e) => {
   setTimeout(function () {
     const kontaktForm = document.querySelector(".form");
     observer2.observe(kontaktForm);
-  }, 2000);
+  }, 1500);
 })
 
 menu.addEventListener("click", () => {
