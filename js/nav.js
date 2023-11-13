@@ -23,7 +23,7 @@ CTA.addEventListener("click", (e) => {
 
     const kontaktForm = document.querySelector(".form");
     observer2.observe(kontaktForm);
-  }, 1000);
+  }, 2000);
 })
 
 menu.addEventListener("click", () => {
