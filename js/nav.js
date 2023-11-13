@@ -8,6 +8,20 @@ CTA.addEventListener("click", (e) => {
   e.preventDefault();
   console.log(e);
   window.location.href = "#contact";
+
+  const observer2 = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      entries[0].target.classList.add("show2")
+    } else {
+      entries[0].target.classList.remove("show2");
+    }
+  });
+
+  const kontaktImg = document.querySelector(".contact--main-container");
+  observer2.observe(kontaktImg);
+
+  const kontaktForm = document.querySelector(".form");
+  observer2.observe(kontaktForm);
 })
 
 menu.addEventListener("click", () => {
