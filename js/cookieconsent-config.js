@@ -32,7 +32,7 @@ CookieConsent.run({
         translations: {
            de: {
                 consentModal: {
-                    title: "Hallo Reisende, es ist Kekszeit!",
+                    title: "Hallo Besucher, es ist Kekszeit 🍪",
                     description: "Hallo, diese Website verwendet essentielle Cookies, um ihren ordnungsgemäßen Betrieb zu gewährleisten, und Tracking-Cookies, um zu verstehen, wie Sie mit ihr interagieren. Letztere werden nur nach Zustimmung gesetzt werden.",
                     acceptAllBtn: "Alle akzeptieren",
                     acceptNecessaryBtn: "Alle ablehnen",
