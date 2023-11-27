@@ -30,56 +30,7 @@ CookieConsent.run({
         default: "de",
         autoDetect: "browser",
         translations: {
-            en: {
-                consentModal: {
-                    title: "Hello traveller, it's cookie time!",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-                    acceptAllBtn: "Accept all",
-                    acceptNecessaryBtn: "Reject all",
-                    showPreferencesBtn: "Manage preferences",
-                    footer: "<a href=\"#link\">Privacy Policy</a>\n<a href=\"#link\">Terms and conditions</a>",
-                    closeIconLabel: "Reject all and close"
-                },
-                preferencesModal: {
-                    title: "Consent Preferences Center",
-                    acceptAllBtn: "Accept all",
-                    acceptNecessaryBtn: "Reject all",
-                    savePreferencesBtn: "Save preferences",
-                    closeIconLabel: "Close modal",
-                    serviceCounterLabel: "Service|Services",
-                    sections: [
-                        {
-                            title: "Cookie Usage",
-                            description: "I use cookies to ensure the basic functions of the website and to improve your online experience. You can choose to opt in or out for each category. For more details on cookies and other sensitive data, please read the full privacy policy."
-                        },
-                        {
-                            title: "Strictly Necessary Cookies <span class=\"pm__badge\">Always Enabled</span>",
-                            description: "These cookies are essential for the proper functioning of my website. Without these cookies, the website would not function properly.",
-                            linkedCategory: "necessary"
-                        },
-                        {
-                            title: "Functionality Cookies",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                            linkedCategory: "functionality"
-                        },
-                        {
-                            title: "Analytics Cookies",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                            linkedCategory: "analytics"
-                        },
-                        {
-                            title: "Advertisement Cookies",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                            linkedCategory: "marketing"
-                        },
-                        {
-                            title: "More information",
-                            description: "For any query in relation to my policy on cookies and your choices, please <a class=\"cc__link\" href=\"#yourdomain.com\">contact me</a>."
-                        }
-                    ]
-                }
-            },
-            de: {
+           de: {
                 consentModal: {
                     title: "Hallo Reisende, es ist Kekszeit!",
                     description: "Hallo, diese Website verwendet essentielle Cookies, um ihren ordnungsgemäßen Betrieb zu gewährleisten, und Tracking-Cookies, um zu verstehen, wie Sie mit ihr interagieren. Letztere werden nur nach Zustimmung gesetzt werden.",
