@@ -2180,6 +2180,13 @@ header .nav__container--heading__button:active {
   position: relative;
 }
 
+.formstudio__link {
+  background: none !important;
+  width: none !important;
+  margin: none !important;
+  padding: none !important;
+}
+
 .portfolio__main-container--card__caption a:hover span:first-child::before {
   top: -10px;
   left: -10px;
