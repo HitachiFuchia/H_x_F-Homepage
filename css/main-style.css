@@ -2182,9 +2182,9 @@ header .nav__container--heading__button:active {
 
 .formstudio__link {
   background: none !important;
-  width: none !important;
-  margin: none !important;
-  padding: none !important;
+  width: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .portfolio__main-container--card__caption a:hover span:first-child::before {
