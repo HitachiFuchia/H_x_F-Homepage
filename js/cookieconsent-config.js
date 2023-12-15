@@ -37,7 +37,7 @@ CookieConsent.run({
                     acceptAllBtn: "Alle akzeptieren",
                     acceptNecessaryBtn: "Alle ablehnen",
                     showPreferencesBtn: "Einstellungen verwalten",
-                    footer: "<a href=\"https://hitachifuchia.netlify.app/Datenschutzerklaerung.html\">Datenschutz</a>\n<a href=\"https://hitachifuchia.netlify.app/Datenschutzerklaerung.html\">Bedingungen und Konditionen</a>",
+                    footer: "<a href=\"https://hitachifuchia.netlify.app/html/datenschutzerklaerung\">Datenschutz</a>\n<a href=\"https://hitachifuchia.netlify.app/html/datenschutzerklaerung\">Bedingungen und Konditionen</a>",
                     closeIconLabel: "Alle ablehnen und schließen"
                 },
                 preferencesModal: {
