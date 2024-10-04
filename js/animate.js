@@ -4,7 +4,7 @@ const observer = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     entries[0].target.classList.add("show");
   } else {
-    entries[0].target.classList.remove("show");
+   // entries[0].target.classList.remove("show");
   }
 });
 
@@ -12,7 +12,7 @@ const observer2 = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     entries[0].target.classList.add("show2")
   } else {
-    entries[0].target.classList.remove("show2");
+    // entries[0].target.classList.remove("show2");
   }
 });
 
@@ -21,7 +21,7 @@ const observer_secSkills = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("skills-animate-show")
     } else {
-      entry.target.classList.remove("skills-animate-show");
+     // entry.target.classList.remove("skills-animate-show");
     }
   });
 })
@@ -31,7 +31,7 @@ const observer_qualifikationen = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("qualifikationen-show");
     } else {
-      entry.target.classList.remove("qualifikationen-show");
+     // entry.target.classList.remove("qualifikationen-show");
     }
   });
 })
