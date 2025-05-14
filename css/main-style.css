@@ -1621,13 +1621,15 @@ header .nav__container--heading__button:active {
 
 .review-text {
   font-size: clamp(1rem, 1vw + 0.725rem, 1.6rem);
+  font-family: "Chakra Petch";
   color: #e0e0e0;
   margin-bottom: 1.5rem;
 }
 
 .review-author {
-  font-size: clamp(0.9rem, 0.9vw + 0.725rem, 1.4rem);
+  font-size: clamp(0.85rem, 1vw + 0.125rem, 1.5rem);
   font-weight: bold;
+  font-family: "Chakra Petch";
   color: #00ff7f;
   margin-bottom: 1rem;
 }
@@ -1642,6 +1644,8 @@ header .nav__container--heading__button:active {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: clamp(0.85rem, 1vw + 0.125rem, 1.5rem);
+   font-family: "Chakra Petch";
 }
 
 .review-link:hover {
