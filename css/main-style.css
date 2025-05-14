@@ -1645,7 +1645,7 @@ header .nav__container--heading__button:active {
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: clamp(0.85rem, 1vw + 0.125rem, 1.5rem);
-   font-family: "Chakra Petch";
+  font-family: "Chakra Petch";
 }
 
 .review-link:hover {
