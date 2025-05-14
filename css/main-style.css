@@ -1634,6 +1634,12 @@ header .nav__container--heading__button:active {
   margin-bottom: 1rem;
 }
 
+.review-author a {
+  font-size: clamp(0.85rem, 1vw + 0.125rem, 1.5rem);
+  font-family: "Chakra Petch";
+}
+  
+
 .review-link {
   display: inline-block;
   margin-top: 1rem;
