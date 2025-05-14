@@ -1584,6 +1584,69 @@ header .nav__container--heading__button:active {
   }
 }
 
+/* Kunden Review Section */
+
+.reviews-section {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.review-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-container h2 {
+  font-size: 2.5rem;
+  color: #00ff7f;
+  margin-bottom: 2rem;
+}
+
+.review-card {
+  background-color: #212121;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 255, 127, 0.35);
+}
+
+.review-text {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.review-author {
+  font-weight: bold;
+  color: #00ff7f;
+  margin-bottom: 1rem;
+}
+
+.review-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #00ff7f;
+  font-weight: bold;
+  border: 2px solid #00ff7f;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.review-link:hover {
+  background-color: #00ff7f;
+  color: #1c1c1c;
+}
+
 .personality-skills {
   display: flex;
   flex-direction: column;
