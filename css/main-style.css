@@ -1584,45 +1584,6 @@ header .nav__container--heading__button:active {
   }
 }
 
-.review-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 768px) {
-  .review-content {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-}
-
-.review-textual {
-  flex: 1;
-  max-width: 600px;
-}
-
-.review-preview {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.review-image {
-  max-width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 0 30px rgba(0, 255, 127, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.review-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
-}
-
 
 .personality-skills {
   display: flex;
