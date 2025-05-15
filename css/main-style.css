@@ -1584,74 +1584,45 @@ header .nav__container--heading__button:active {
   }
 }
 
-/* Kunden Review Section */
-
-.reviews-section {
-  background-color: #1c1c1c;
-  color: #ffffff;
-  padding: 4rem 2rem;
-  font-family: 'Segoe UI', sans-serif;
+.review-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.review-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+@media (min-width: 768px) {
+  .review-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
-.review-container h2 {
-  font-size: 2.5rem;
-  color: #00ff7f;
-  margin-bottom: 2rem;
+.review-textual {
+  flex: 1;
+  max-width: 600px;
 }
 
-.review-card {
-  background-color: #212121;
-  padding: 2.5rem;
+.review-preview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.review-image {
+  max-width: 100%;
   border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
+  box-shadow: 0 0 30px rgba(0, 255, 127, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
- margin-top: clamp(8px, 1.14vw, 32px);
 }
 
-.review-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(0, 255, 127, 0.35);
+.review-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
 }
 
-.review-text {
-  font-size: clamp(1rem, 1vw + 0.725rem, 1.6rem);
-  font-family: "Chakra Petch";
-  color: #e0e0e0;
-  margin-bottom: 1.5rem;
-}
-
-.review-author {
-  font-size: clamp(1.1rem, 1.5vw, 1.6rem);
-  font-weight: bold;
-  font-family: "Chakra Petch";
-  color: #00ff7f;
-  margin-bottom: 1rem;
-}  
-
-.review-link {
-  display: inline-block;
-  margin-top: 1rem;
-  text-decoration: none;
-  color: #00ff7f;
-  font-weight: bold;
-  border: 2px solid #00ff7f;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-size: clamp(1.1rem, 1.5vw, 1.8rem);
-  font-family: "Chakra Petch";
-}
-
-.review-link:hover {
-  background-color: #00ff7f;
-  color: #1c1c1c;
-}
 
 .personality-skills {
   display: flex;
