@@ -1665,7 +1665,9 @@ header .nav__container--heading__button:active {
 /* ───────────── Call-to-Action Button ───────────── */
 
 .review-link {
+  display: inline-block; /* 👈 Kein block-level mehr */
   margin-top: 1.5rem;
+  margin-left: auto;     /* 👈 Schiebt den Button innerhalb des Containers nach rechts */
   text-decoration: none;
   color: #00ff7f;
   font-weight: bold;
@@ -1675,10 +1677,8 @@ header .nav__container--heading__button:active {
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: clamp(1.1rem, 1.5vw, 1.8rem);
   font-family: "Chakra Petch", sans-serif;
-   margin-left: auto;
-  display: block;
-  text-align: right;
 }
+
 
 .review-link:hover {
   background-color: #00ff7f;
