@@ -1677,6 +1677,7 @@ header .nav__container--heading__button:active {
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: clamp(1.1rem, 1.5vw, 1.8rem);
   font-family: "Chakra Petch", sans-serif;
+  text-align: center;
 }
 
 
