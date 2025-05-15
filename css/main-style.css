@@ -1584,42 +1584,58 @@ header .nav__container--heading__button:active {
   }
 }
 
-/* Layout der Review-Sektion */
-/* ───────────── Allgemeine Sektion ───────────── */
+/******************* Layout der Bewertung-Sektion **********************/
 
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Reviews Section                                                            */
+/*─────────────────────────────────────────────────────────────────────────────*/
 .reviews-section {
-  background-color: #1c1c1c;
-  padding: 6rem 2rem 4rem 2rem; /* mehr Abstand nach oben */
-  color: #e0e0e0;
-  font-family: "Chakra Petch", sans-serif;
+  width: 100%;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  background-color: #111;
 }
 
-/* ───────────── Flexbox-Layout ───────────── */
+.review-container {
+  width: 100%;
+  margin: 0 auto;
+}
 
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Sektionstitel                                                             */
+/*─────────────────────────────────────────────────────────────────────────────*/
+.sec-title {
+  color: #00ff7f;
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
+  margin-bottom: 5%;
+  /* jetzt 5% Abstand nach unten */
+}
+
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Flex-Layout für Bild & Text                                                */
+/*─────────────────────────────────────────────────────────────────────────────*/
 .review-content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  /* nebeneinander, solange Platz */
+  align-items: stretch;
+  /* Bild & Text immer gleich hoch */
   gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 4rem auto 0 auto;
-  padding: 0 1rem;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-  .review-content {
-    flex-direction: row-reverse; /* Bild links, Text rechts */
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-}
-
-/* ───────────── Textcontainer ───────────── */
-
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Text-Container                                                              */
+/*─────────────────────────────────────────────────────────────────────────────*/
 .review-textual {
-  flex: 1;
-  max-width: 600px;
+  flex: 1 1 50%;
+  /* Basis 50%, wächst und schrumpft */
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  /* Text oben, Button unten */
+  justify-content: flex-start;
   color: #e0e0e0;
   font-size: clamp(1rem, 1vw + 0.725rem, 1.6rem);
   line-height: 1.6;
@@ -1629,10 +1645,12 @@ header .nav__container--heading__button:active {
   box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
 }
 
-/* ───────────── Bildcontainer ───────────── */
-
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Bild-Container                                                              */
+/*─────────────────────────────────────────────────────────────────────────────*/
 .review-preview {
-  flex: 1;
+  flex: 1 1 50%;
+  min-width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1640,8 +1658,9 @@ header .nav__container--heading__button:active {
 }
 
 .review-image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 0 30px rgba(0, 255, 127, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1652,8 +1671,9 @@ header .nav__container--heading__button:active {
   box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
 }
 
-/* ───────────── Autorname ───────────── */
-
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Autorname                                                                   */
+/*─────────────────────────────────────────────────────────────────────────────*/
 .review-author {
   font-weight: bold;
   color: #00ff7f;
@@ -1662,12 +1682,16 @@ header .nav__container--heading__button:active {
   font-family: "Chakra Petch", sans-serif;
 }
 
-/* ───────────── Call-to-Action Button ───────────── */
-
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Call-to-Action Button                                                       */
+/*─────────────────────────────────────────────────────────────────────────────*/
 .review-link {
-  display: inline-block; /* 👈 Kein block-level mehr */
-  margin-top: 1.5rem;
-  margin-left: auto;     /* 👈 Schiebt den Button innerhalb des Containers nach rechts */
+  display: inline-block;
+  margin-top: auto;
+  /* Button ans untere Ende schieben */
+  margin-left: auto;
+  /* Button rechtsbündig */
+  text-align: center;
   text-decoration: none;
   color: #00ff7f;
   font-weight: bold;
@@ -1677,9 +1701,7 @@ header .nav__container--heading__button:active {
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: clamp(1.1rem, 1.5vw, 1.8rem);
   font-family: "Chakra Petch", sans-serif;
-  text-align: center;
 }
-
 
 .review-link:hover {
   background-color: #00ff7f;
@@ -1687,15 +1709,49 @@ header .nav__container--heading__button:active {
   animation: wiggle 0.3s ease;
 }
 
-/* ───────────── Mikroanimation ───────────── */
-
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Mikroanimation                                                              */
+/*─────────────────────────────────────────────────────────────────────────────*/
 @keyframes wiggle {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(1.5deg); }
-  50% { transform: rotate(-1.5deg); }
-  75% { transform: rotate(1deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(1.5deg);
+  }
+
+  50% {
+    transform: rotate(-1.5deg);
+  }
+
+  75% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
+
+/*─────────────────────────────────────────────────────────────────────────────*/
+/*  Ab 2000px: Container untereinander                                          */
+/*─────────────────────────────────────────────────────────────────────────────*/
+@media (min-width: 2000px) {
+  .review-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .review-textual,
+  .review-preview {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+}
+
+
 
 .personality-skills {
   display: flex;
