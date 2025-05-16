@@ -1857,50 +1857,48 @@ header .nav__container--heading__button:active {
 
 .review-content {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 2rem;
   width: 100%;
-  min-height: 520px; /* sorgt für Grundhöhe, kann angepasst werden */
-}
-
-.review-textual, .review-preview {
-  flex: 1 1 50%;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  padding: 2rem;
-  border-radius: 1rem;
+  max-height: 640px;  /* kann nach Bedarf angepasst werden */
 }
 
 .review-textual {
+  flex: 2 1 60%;
   color: #e0e0e0;
   font-size: clamp(1.6rem, 1vw + 0.8rem, 1.8rem);
   line-height: 1.6;
   background-color: #212121;
+  padding: 2rem;
+  border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
   font-family: "Chakra Petch", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .review-preview {
-  background: #fff0; /* durchsichtig, falls du eine Farbe willst: #fff oder ähnlich */
-  align-items: stretch;
-  justify-content: stretch;
-  box-shadow: 0 0 20px rgba(0, 255, 127, 0.10);
+  flex: 1 1 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: transparent;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,255,127,0.10);
 }
 
 .review-image {
   width: 100%;
-  height: 100%;
-  min-height: 100%;
-  min-width: 0;
-  object-fit: cover;
+  height: auto;
+  max-width: 480px;
+  max-height: 400px;
+  object-fit: contain;
   border-radius: 1rem;
-  box-shadow: 0 0 30px rgba(0, 255, 127, 0.15);
+  box-shadow: 0 0 30px rgba(0,255,127,0.15);
   display: block;
-  max-width: 100%;
-  max-height: 100%;
+  margin: 0 auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1957,13 +1955,17 @@ header .nav__container--heading__button:active {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 3rem;
-    min-height: 0;
+    max-height: none;
   }
   .review-textual,
   .review-preview {
     flex: 1 1 100%;
     min-width: auto;
     padding: 2rem;
+  }
+  .review-image {
+    max-width: 700px;
+    max-height: 450px;
   }
 }
 
@@ -1973,7 +1975,7 @@ header .nav__container--heading__button:active {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 2rem;
-    min-height: 0;
+    max-height: none;
   }
   .review-textual,
   .review-preview {
@@ -1994,6 +1996,7 @@ header .nav__container--heading__button:active {
     height: auto;
     min-height: 0;
     max-width: 100%;
+    max-height: 320px;
     border-radius: 1rem;
   }
 }
@@ -2007,10 +2010,14 @@ header .nav__container--heading__button:active {
     font-size: 1.6rem;
     padding: 0.8rem 1.2rem;
   }
+  .review-image {
+    max-width: 100%;
+    max-height: 180px;
+  }
 }
 
 
-/* Qualifikationen Section */
+/********************* Qualifikationen Section *********************/
 
 .qualifikationen-hidden {
   opacity: 0;
