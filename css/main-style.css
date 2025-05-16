@@ -1807,9 +1807,6 @@ header .nav__container--heading__button:active {
 
 /******************* Layout der Bewertung-Sektion **********************/
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Reviews Section                                                            */
-/*─────────────────────────────────────────────────────────────────────────────*/
 .reviews-section {
   width: 100%;
   padding: 4rem 2rem;
@@ -1822,37 +1819,32 @@ header .nav__container--heading__button:active {
   margin: 0 auto;
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Sektionstitel                                                             */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Sektionstitel                                             */
+/*────────────────────────────────────────────────────────────*/
 .review-container h1 {
   margin-bottom: 5%;
-  /* jetzt 5% Abstand nach unten */
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Flex-Layout für Bild & Text                                                */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Flex-Layout für Bild & Text                               */
+/*────────────────────────────────────────────────────────────*/
 .review-content {
   display: flex;
   flex-wrap: nowrap;
-  /* nebeneinander, solange Platz */
   align-items: stretch;
-  /* Bild & Text immer gleich hoch */
   gap: 2rem;
   width: 100%;
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Text-Container                                                              */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Text-Container                                            */
+/*────────────────────────────────────────────────────────────*/
 .review-textual {
   flex: 1 1 50%;
-  /* Basis 50%, wächst und schrumpft */
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  /* Text oben, Button unten */
   justify-content: flex-start;
   color: #e0e0e0;
   font-size: clamp(1rem, 1vw + 0.725rem, 1.6rem);
@@ -1863,9 +1855,9 @@ header .nav__container--heading__button:active {
   box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Bild-Container                                                              */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Bild-Container                                            */
+/*────────────────────────────────────────────────────────────*/
 .review-preview {
   flex: 1 1 50%;
   min-width: 320px;
@@ -1889,16 +1881,16 @@ header .nav__container--heading__button:active {
   box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Text Passage                                                                   */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Text Passage                                              */
+/*────────────────────────────────────────────────────────────*/
 .review-text {
   font-family: "Chakra Petch", sans-serif;
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Autorname                                                                   */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Autorname                                                 */
+/*────────────────────────────────────────────────────────────*/
 .review-author {
   font-weight: bold;
   color: #00ff7f;
@@ -1907,15 +1899,13 @@ header .nav__container--heading__button:active {
   font-family: "Chakra Petch", sans-serif;
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Call-to-Action Button                                                       */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Call-to-Action Button                                     */
+/*────────────────────────────────────────────────────────────*/
 .review-link {
   display: inline-block;
   margin-top: auto;
-  /* Button ans untere Ende schieben */
   margin-left: auto;
-  /* Button rechtsbündig */
   text-align: center;
   text-decoration: none;
   color: #00ff7f;
@@ -1934,41 +1924,26 @@ header .nav__container--heading__button:active {
   animation: wiggle 0.3s ease;
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Mikroanimation                                                              */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  Mikroanimation                                            */
+/*────────────────────────────────────────────────────────────*/
 @keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(1.5deg);
-  }
-
-  50% {
-    transform: rotate(-1.5deg);
-  }
-
-  75% {
-    transform: rotate(1deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
+  0%   { transform: rotate(0deg);}
+  25%  { transform: rotate(1.5deg);}
+  50%  { transform: rotate(-1.5deg);}
+  75%  { transform: rotate(1deg);}
+  100% { transform: rotate(0deg);}
 }
 
-/*─────────────────────────────────────────────────────────────────────────────*/
-/*  Ab 2000px: Container untereinander                                          */
-/*─────────────────────────────────────────────────────────────────────────────*/
+/*────────────────────────────────────────────────────────────*/
+/*  XXL-Bildschirme: untereinander ab 2000px                  */
+/*────────────────────────────────────────────────────────────*/
 @media (min-width: 2000px) {
   .review-content {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 3rem;
   }
-
   .review-textual,
   .review-preview {
     flex: 1 1 100%;
@@ -1976,6 +1951,9 @@ header .nav__container--heading__button:active {
   }
 }
 
+/*────────────────────────────────────────────────────────────*/
+/*  Responsive: Mobile-Optimierung                            */
+/*────────────────────────────────────────────────────────────*/
 @media (max-width: 900px) {
   .review-content {
     flex-direction: column;
@@ -1987,11 +1965,15 @@ header .nav__container--heading__button:active {
     min-width: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem; /* Optional, kompakter für mobile */
+    padding: 1rem;
   }
   .review-textual {
+    font-size: 1.13rem; /* ca. 18px auf den meisten Mobiles */
     padding: 1.5rem 1rem;
-    font-size: 1.05rem;
+  }
+  .review-link {
+    font-size: 1.08rem;
+    padding: 0.7rem 1.2rem;
   }
   .review-image {
     height: auto;
@@ -2000,21 +1982,20 @@ header .nav__container--heading__button:active {
   }
 }
 
+/* Noch größere Buttons und Text für extra kleine Screens */
 @media (max-width: 500px) {
   .review-textual {
-    padding: 1rem 0.5rem;
-    font-size: 0.96rem;
+    font-size: 1rem;     /* 16px: niemals kleiner für Mobile! */
+    padding: 1.1rem 0.5rem;
   }
   .review-link {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
   }
 }
 
 
-
 /* Qualifikationen Section */
-
 
 .qualifikationen-hidden {
   opacity: 0;
