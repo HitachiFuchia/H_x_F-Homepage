@@ -1968,12 +1968,12 @@ header .nav__container--heading__button:active {
     padding: 1rem;
   }
   .review-textual {
-    font-size: 1.13rem; /* ca. 18px auf den meisten Mobiles */
+    font-size: 1.7rem;  /* 17px: optimal für Mobile */
     padding: 1.5rem 1rem;
   }
   .review-link {
-    font-size: 1.08rem;
-    padding: 0.7rem 1.2rem;
+    font-size: 1.7rem;  /* 17px, gut tippbar */
+    padding: 0.9rem 1.6rem;
   }
   .review-image {
     height: auto;
@@ -1982,17 +1982,17 @@ header .nav__container--heading__button:active {
   }
 }
 
-/* Noch größere Buttons und Text für extra kleine Screens */
 @media (max-width: 500px) {
   .review-textual {
-    font-size: 1rem;     /* 16px: niemals kleiner für Mobile! */
+    font-size: 1.6rem;  /* 16px */
     padding: 1.1rem 0.5rem;
   }
   .review-link {
-    font-size: 1rem;
-    padding: 0.6rem 1rem;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.2rem;
   }
 }
+
 
 
 /* Qualifikationen Section */
