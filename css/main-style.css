@@ -1588,7 +1588,7 @@ header .nav__container--heading__button:active {
 
 .personality-skills {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh;  <--- WEG! */
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -1636,7 +1636,7 @@ header .nav__container--heading__button:active {
   gap: 5%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 2rem;    /* << Weniger Abstand nach unten */
 }
 
 .personality-skills--box {
@@ -1796,7 +1796,7 @@ header .nav__container--heading__button:active {
     justify-content: center;
     gap: 2vw;
     margin: 0;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;  /* Weniger Platz unten */
   }
   .personality-skills--box {
     width: 47vw;
@@ -1818,7 +1818,7 @@ header .nav__container--heading__button:active {
 @media (max-width: 500px) {
   .personality-skills--main-box {
     gap: 2vw;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   .personality-skills--box {
     width: 47vw;
@@ -1835,10 +1835,6 @@ header .nav__container--heading__button:active {
     margin-top: 0.4rem;
   }
 }
-
-
-/* Keine künstliche min-height im mobilen Bereich */
-
 
 
 /******************* Layout der Bewertung-Sektion **********************/
