@@ -1864,41 +1864,39 @@ header .nav__container--heading__button:active {
 .review-content {
   display: flex;
   flex-wrap: nowrap;
-  align-items: stretch;
+  align-items: stretch;  /* Bild & Text immer gleich hoch */
   gap: 2rem;
   width: 100%;
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Text-Container                                            */
-/*────────────────────────────────────────────────────────────*/
-.review-textual {
+.review-textual, .review-preview {
   flex: 1 1 50%;
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.review-textual {
   color: #e0e0e0;
-  font-size: clamp(1rem, 1vw + 0.725rem, 1.6rem);
+  font-size: clamp(1.6rem, 1vw + 0.8rem, 1.8rem);
   line-height: 1.6;
   background-color: #212121;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
+  font-family: "Chakra Petch", sans-serif;
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Bild-Container                                            */
-/*────────────────────────────────────────────────────────────*/
 .review-preview {
-  flex: 1 1 50%;
-  min-width: 320px;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 }
 
+/* Bild exakt so hoch/breit wie der Container */
 .review-image {
   width: 100%;
   height: 100%;
@@ -1906,6 +1904,9 @@ header .nav__container--heading__button:active {
   border-radius: 1rem;
   box-shadow: 0 0 30px rgba(0, 255, 127, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .review-image:hover {
@@ -1927,7 +1928,7 @@ header .nav__container--heading__button:active {
   font-weight: bold;
   color: #00ff7f;
   margin-top: 1rem;
-  font-size: clamp(1.1rem, 1.5vw, 1.6rem);
+  font-size: clamp(1.6rem, 1.7vw, 1.8rem);
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -1943,10 +1944,10 @@ header .nav__container--heading__button:active {
   color: #00ff7f;
   font-weight: bold;
   border: 2px solid #00ff7f;
-  padding: 0.6rem 1.2rem;
+  padding: 0.9rem 1.6rem;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+  font-size: 1.7rem;
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -1980,6 +1981,7 @@ header .nav__container--heading__button:active {
   .review-preview {
     flex: 1 1 100%;
     min-width: auto;
+    padding: 0;
   }
 }
 
@@ -1997,14 +1999,14 @@ header .nav__container--heading__button:active {
     min-width: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 0;
   }
   .review-textual {
-    font-size: 1.7rem;  /* 17px: optimal für Mobile */
+    font-size: 1.7rem;  /* 17px bei 62.5% root */
     padding: 1.5rem 1rem;
   }
   .review-link {
-    font-size: 1.7rem;  /* 17px, gut tippbar */
+    font-size: 1.7rem;
     padding: 0.9rem 1.6rem;
   }
   .review-image {
@@ -2016,7 +2018,7 @@ header .nav__container--heading__button:active {
 
 @media (max-width: 500px) {
   .review-textual {
-    font-size: 1.6rem;  /* 16px */
+    font-size: 1.6rem;
     padding: 1.1rem 0.5rem;
   }
   .review-link {
@@ -2024,8 +2026,6 @@ header .nav__container--heading__button:active {
     padding: 0.8rem 1.2rem;
   }
 }
-
-
 
 /* Qualifikationen Section */
 
