@@ -1788,45 +1788,51 @@ header .nav__container--heading__button:active {
   }
 }
 
-/* MOBILE: Container und Icons DEUTLICH größer! */
+/* MOBILE: 2 SPALTEN, große Boxen und Icons */
 @media (max-width: 900px) {
   .personality-skills--main-box {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    margin: 0;
     padding-bottom: 4rem;
   }
   .personality-skills--box {
-    width: 98vw;
-    max-width: 420px;
-    height: 220px;
+    width: 47vw;
+    max-width: 210px;
+    height: 180px;
+    margin-bottom: 2vw;
   }
   .personality-skills--box__title {
-    font-size: 2.1rem;
+    font-size: 1.4rem;
   }
   .personality-skills--box__title span img {
-    width: 120px;
-    height: 120px;
-    margin-top: 1.5rem;
+    width: 80px;
+    height: 80px;
+    margin-top: 0.8rem;
   }
 }
 
-/* EXTRAKLEIN: auch hier Icons und Boxen groß halten */
+/* EXTRA KLEINE GERÄTE: 2 Spalten, noch kompakter */
 @media (max-width: 500px) {
+  .personality-skills--main-box {
+    gap: 2vw;
+    padding-bottom: 3rem;
+  }
   .personality-skills--box {
-    width: 98vw;
-    max-width: 95vw;
-    height: 210px;
+    width: 47vw;
+    max-width: 160px;
+    height: 120px;
+    margin-bottom: 2vw;
   }
   .personality-skills--box__title {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
   }
   .personality-skills--box__title span img {
-    width: 100px;
-    height: 100px;
-    margin-top: 1.2rem;
+    width: 56px;
+    height: 56px;
+    margin-top: 0.4rem;
   }
 }
 
