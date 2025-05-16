@@ -1851,22 +1851,16 @@ header .nav__container--heading__button:active {
   margin: 0 auto;
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Sektionstitel                                             */
-/*────────────────────────────────────────────────────────────*/
 .review-container h1 {
   margin-bottom: 5%;
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Flex-Layout für Bild & Text                               */
-/*────────────────────────────────────────────────────────────*/
 .review-content {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: stretch;  /* Bild & Text immer gleich hoch */
+  align-items: stretch;
   gap: 2rem;
   width: 100%;
+  min-height: 520px; /* sorgt für Grundhöhe, kann angepasst werden */
 }
 
 .review-textual, .review-preview {
@@ -1876,7 +1870,8 @@ header .nav__container--heading__button:active {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  padding: 0;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .review-textual {
@@ -1884,29 +1879,29 @@ header .nav__container--heading__button:active {
   font-size: clamp(1.6rem, 1vw + 0.8rem, 1.8rem);
   line-height: 1.6;
   background-color: #212121;
-  padding: 2rem;
-  border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 255, 127, 0.15);
   font-family: "Chakra Petch", sans-serif;
 }
 
 .review-preview {
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+  background: #fff0; /* durchsichtig, falls du eine Farbe willst: #fff oder ähnlich */
+  align-items: stretch;
+  justify-content: stretch;
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.10);
 }
 
-/* Bild exakt so hoch/breit wie der Container */
 .review-image {
   width: 100%;
   height: 100%;
+  min-height: 100%;
+  min-width: 0;
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 0 0 30px rgba(0, 255, 127, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
   max-width: 100%;
   max-height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .review-image:hover {
@@ -1914,16 +1909,10 @@ header .nav__container--heading__button:active {
   box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Text Passage                                              */
-/*────────────────────────────────────────────────────────────*/
 .review-text {
   font-family: "Chakra Petch", sans-serif;
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Autorname                                                 */
-/*────────────────────────────────────────────────────────────*/
 .review-author {
   font-weight: bold;
   color: #00ff7f;
@@ -1932,9 +1921,6 @@ header .nav__container--heading__button:active {
   font-family: "Chakra Petch", sans-serif;
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Call-to-Action Button                                     */
-/*────────────────────────────────────────────────────────────*/
 .review-link {
   display: inline-block;
   margin-top: auto;
@@ -1957,9 +1943,6 @@ header .nav__container--heading__button:active {
   animation: wiggle 0.3s ease;
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Mikroanimation                                            */
-/*────────────────────────────────────────────────────────────*/
 @keyframes wiggle {
   0%   { transform: rotate(0deg);}
   25%  { transform: rotate(1.5deg);}
@@ -1968,42 +1951,40 @@ header .nav__container--heading__button:active {
   100% { transform: rotate(0deg);}
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  XXL-Bildschirme: untereinander ab 2000px                  */
-/*────────────────────────────────────────────────────────────*/
+/* XXL-Bildschirme: Container untereinander ab 2000px */
 @media (min-width: 2000px) {
   .review-content {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 3rem;
+    min-height: 0;
   }
   .review-textual,
   .review-preview {
     flex: 1 1 100%;
     min-width: auto;
-    padding: 0;
+    padding: 2rem;
   }
 }
 
-/*────────────────────────────────────────────────────────────*/
-/*  Responsive: Mobile-Optimierung                            */
-/*────────────────────────────────────────────────────────────*/
+/* Responsive: Tablet und Mobile */
 @media (max-width: 900px) {
   .review-content {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 2rem;
+    min-height: 0;
   }
   .review-textual,
   .review-preview {
     min-width: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 0;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
   }
   .review-textual {
-    font-size: 1.7rem;  /* 17px bei 62.5% root */
-    padding: 1.5rem 1rem;
+    font-size: 1.7rem;
   }
   .review-link {
     font-size: 1.7rem;
@@ -2011,6 +1992,7 @@ header .nav__container--heading__button:active {
   }
   .review-image {
     height: auto;
+    min-height: 0;
     max-width: 100%;
     border-radius: 1rem;
   }
@@ -2026,6 +2008,7 @@ header .nav__container--heading__button:active {
     padding: 0.8rem 1.2rem;
   }
 }
+
 
 /* Qualifikationen Section */
 
