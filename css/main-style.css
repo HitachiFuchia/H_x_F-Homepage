@@ -1604,10 +1604,7 @@ header .nav__container--heading__button:active {
 /*─────────────────────────────────────────────────────────────────────────────*/
 /*  Sektionstitel                                                             */
 /*─────────────────────────────────────────────────────────────────────────────*/
-.sec-title {
-  color: #00ff7f;
-  font-size: clamp(2rem, 4vw, 4rem);
-  text-align: center;
+.review-container h1 {
   margin-bottom: 5%;
   /* jetzt 5% Abstand nach unten */
 }
