@@ -1836,7 +1836,11 @@ header .nav__container--heading__button:active {
   }
 }
 
-
+@media screen and (max-width: 700px) {
+  .personality-skills {
+    background: radial-gradient(circle, rgb(46, 139, 87) 0%, rgb(28, 28, 28) 100%, rgb(46, 139, 87) 100%) !important;
+  }
+}
 /******************* Layout der Bewertung-Sektion **********************/
 
 .reviews-section {
