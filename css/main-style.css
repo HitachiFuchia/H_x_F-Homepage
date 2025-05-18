@@ -1617,7 +1617,7 @@ header .nav__container--heading__button:active {
   z-index: 1;
 }
 
-.personality-skills > *:not(video):not(.video-overlay) {
+.personality-skills>*:not(video):not(.video-overlay) {
   position: relative;
   z-index: 2;
 }
@@ -1636,7 +1636,8 @@ header .nav__container--heading__button:active {
   gap: 5%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 2rem;    /* << Weniger Abstand nach unten */
+  padding-bottom: 2rem;
+  /* << Weniger Abstand nach unten */
 }
 
 .personality-skills--box {
@@ -1657,8 +1658,10 @@ header .nav__container--heading__button:active {
 .personality-skills--box::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-top: 4px solid #1c1c1c;
   border-bottom: 4px solid #1c1c1c;
   box-sizing: border-box;
@@ -1678,8 +1681,10 @@ header .nav__container--heading__button:active {
 .personality-skills--box::after {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-right: 4px solid #1c1c1c;
   border-left: 4px solid #1c1c1c;
   box-sizing: border-box;
@@ -1696,7 +1701,8 @@ header .nav__container--heading__button:active {
   color: #00ff7f;
   font-family: "Chakra Petch", sans-serif;
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
@@ -1729,8 +1735,10 @@ header .nav__container--heading__button:active {
 .personality-skills--box__rotated::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-top: 4px solid #1c1c1c;
   border-bottom: 4px solid #1c1c1c;
   box-sizing: border-box;
@@ -1743,8 +1751,10 @@ header .nav__container--heading__button:active {
 .personality-skills--box__rotated::after {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-right: 4px solid #1c1c1c;
   border-left: 4px solid #1c1c1c;
   box-sizing: border-box;
@@ -1777,10 +1787,12 @@ header .nav__container--heading__button:active {
     margin-left: 2%;
     margin-right: 2%;
   }
+
   .personality-skills--box {
     width: 220px;
     height: 220px;
   }
+
   .personality-skills--box__title span img {
     width: 90px;
     height: 90px;
@@ -1796,17 +1808,21 @@ header .nav__container--heading__button:active {
     justify-content: center;
     gap: 2vw;
     margin: 0;
-    padding-bottom: 3rem;  /* Weniger Platz unten */
+    padding-bottom: 3rem;
+    /* Weniger Platz unten */
   }
+
   .personality-skills--box {
     width: 47vw;
     max-width: 210px;
     height: 180px;
     margin-bottom: 2vw;
   }
+
   .personality-skills--box__title {
     font-size: 1.4rem;
   }
+
   .personality-skills--box__title span img {
     width: 80px;
     height: 80px;
@@ -1820,15 +1836,18 @@ header .nav__container--heading__button:active {
     gap: 2vw;
     padding-bottom: 2rem;
   }
+
   .personality-skills--box {
     width: 47vw;
     max-width: 160px;
     height: 120px;
     margin-bottom: 2vw;
   }
+
   .personality-skills--box__title {
     font-size: 1.1rem;
   }
+
   .personality-skills--box__title span img {
     width: 56px;
     height: 56px;
@@ -1841,7 +1860,12 @@ header .nav__container--heading__button:active {
     position: static;
     background: radial-gradient(circle, rgb(46, 139, 87) 0%, rgb(28, 28, 28) 100%, rgb(46, 139, 87) 100%) !important;
   }
+
+  .video-overlay {
+    display: none;
+  }
 }
+
 /******************* Layout der Bewertung-Sektion **********************/
 
 .reviews-section {
@@ -1865,7 +1889,8 @@ header .nav__container--heading__button:active {
   align-items: flex-start;
   gap: 2rem;
   width: 100%;
-  max-height: 640px;  /* kann nach Bedarf angepasst werden */
+  max-height: 640px;
+  /* kann nach Bedarf angepasst werden */
 }
 
 .review-textual {
@@ -1891,7 +1916,7 @@ header .nav__container--heading__button:active {
   background: transparent;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0,255,127,0.10);
+  box-shadow: 0 0 20px rgba(0, 255, 127, 0.10);
 }
 
 .review-image {
@@ -1901,7 +1926,7 @@ header .nav__container--heading__button:active {
   max-height: 400px;
   object-fit: contain;
   border-radius: 1rem;
-  box-shadow: 0 0 30px rgba(0,255,127,0.15);
+  box-shadow: 0 0 30px rgba(0, 255, 127, 0.15);
   display: block;
   margin: 0 auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1947,11 +1972,25 @@ header .nav__container--heading__button:active {
 }
 
 @keyframes wiggle {
-  0%   { transform: rotate(0deg);}
-  25%  { transform: rotate(1.5deg);}
-  50%  { transform: rotate(-1.5deg);}
-  75%  { transform: rotate(1deg);}
-  100% { transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(1.5deg);
+  }
+
+  50% {
+    transform: rotate(-1.5deg);
+  }
+
+  75% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* XXL-Bildschirme: Container untereinander ab 2000px */
@@ -1962,12 +2001,14 @@ header .nav__container--heading__button:active {
     gap: 3rem;
     max-height: none;
   }
+
   .review-textual,
   .review-preview {
     flex: 1 1 100%;
     min-width: auto;
     padding: 2rem;
   }
+
   .review-image {
     max-width: 700px;
     max-height: 450px;
@@ -1982,6 +2023,7 @@ header .nav__container--heading__button:active {
     gap: 2rem;
     max-height: none;
   }
+
   .review-textual,
   .review-preview {
     min-width: 0;
@@ -1990,13 +2032,16 @@ header .nav__container--heading__button:active {
     padding: 1.5rem 1rem;
     border-radius: 1rem;
   }
+
   .review-textual {
     font-size: 1.7rem;
   }
+
   .review-link {
     font-size: 1.7rem;
     padding: 0.9rem 1.6rem;
   }
+
   .review-image {
     height: auto;
     min-height: 0;
@@ -2011,10 +2056,12 @@ header .nav__container--heading__button:active {
     font-size: 1.6rem;
     padding: 1.1rem 0.5rem;
   }
+
   .review-link {
     font-size: 1.6rem;
     padding: 0.8rem 1.2rem;
   }
+
   .review-image {
     max-width: 100%;
     max-height: 180px;
