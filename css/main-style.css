@@ -1939,29 +1939,60 @@ header .nav__container--heading__button:active {
   box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
 }
 
+/* ───── Sterne-Bewertung (Icons) ───── */
 .review-stars {
+  width: 95%;                     /* Fast volle Containerbreite */
   display: flex;
-  gap: 0.3em;
-  justify-content: flex-start;
+  justify-content: center;         /* Zentriert die Sterne */
   align-items: center;
-  margin-bottom: 1.5rem;
-  margin-left: 0.2rem;
+  gap: 2vw;                        /* Responsiver Abstand */
+  margin-bottom: 2.5rem;
+  margin-top: 0.5rem;
 }
 
 .review-stars .star {
-  width: 2.3em;
-  height: 2.3em;
+  flex: 1 1 0;
+  width: 15%;                      /* Jeder Stern nimmt 15% der Containerbreite */
+  height: auto;
+  max-width: 120px;                /* Obergrenze für sehr große Screens */
+  min-width: 45px;                 /* Untergrenze für kleine Bildschirme */
   color: #00ff7f;
-  filter: drop-shadow(0 0 5px #00ff7f55);
+  filter: drop-shadow(0 0 8px #00ff7f55);
   transition: transform 0.18s;
+  aspect-ratio: 1/1;
+  display: block;
 }
 
 .review-stars .star:hover {
-  transform: scale(1.1) rotate(-3deg);
+  transform: scale(1.13) rotate(-3deg);
   color: #38ff99;
-  filter: drop-shadow(0 0 7px #38ff9977);
+  filter: drop-shadow(0 0 14px #38ff9977);
 }
 
+/* Tablet und kleiner */
+@media (max-width: 900px) {
+  .review-stars {
+    width: 98%;
+    gap: 1vw;
+    margin-bottom: 2rem;
+  }
+  .review-stars .star {
+    max-width: 60px;
+    min-width: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+  .review-stars {
+    gap: 0.5vw;
+    margin-bottom: 1rem;
+  }
+  .review-stars .star {
+    max-width: 35px;
+    min-width: 16px;
+  }
+}
 
 .review-text {
   font-family: "Chakra Petch", sans-serif;
