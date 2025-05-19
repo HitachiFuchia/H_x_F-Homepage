@@ -1939,6 +1939,30 @@ header .nav__container--heading__button:active {
   box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
 }
 
+.review-stars {
+  display: flex;
+  gap: 0.3em;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+.review-stars .star {
+  width: 2.3em;
+  height: 2.3em;
+  color: #00ff7f;
+  filter: drop-shadow(0 0 5px #00ff7f55);
+  transition: transform 0.18s;
+}
+
+.review-stars .star:hover {
+  transform: scale(1.1) rotate(-3deg);
+  color: #38ff99;
+  filter: drop-shadow(0 0 7px #38ff9977);
+}
+
+
 .review-text {
   font-family: "Chakra Petch", sans-serif;
 }
