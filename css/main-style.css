@@ -1636,8 +1636,7 @@ header .nav__container--heading__button:active {
   gap: 5%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-bottom: 2rem;
-  /* << Weniger Abstand nach unten */
+  padding-bottom: 12rem;
 }
 
 .personality-skills--box {
@@ -3269,6 +3268,12 @@ header .nav__container--heading__button:active {
   100% {
     left: -10%;
     top: -10%;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  header .nav__container--heading__para {
+    top: 20%;
   }
 }
 
