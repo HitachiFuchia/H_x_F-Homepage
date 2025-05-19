@@ -2031,7 +2031,30 @@ header .nav__container--heading__button:active {
   }
 }
 
+/* Ab 1850px */
+@media (min-width: 1850px) {
+  .review-text {
+    font-size: 28px;
+  }
+}
+
+/* Ab 1849px */
+@media (max-width: 1849px) {
+  .review-text {
+    font-size: 24px;
+  }
+}
+
+/* Ab 1650px */
+@media (max-width: 1650px) {
+  .review-text {
+    font-size: 20px;
+  }
+}
+
+
 /* Ab 1250px: nebeneinander */
+
 @media (min-width: 1250px) {
   .review-content {
     flex-direction: row;
@@ -2090,6 +2113,10 @@ header .nav__container--heading__button:active {
   .review-stars .star {
     max-width: 60px;
     min-width: 28px;
+  }
+
+  .review-text {
+    font-size: 17px;
   }
 }
 
